@@ -1,0 +1,84 @@
+# =========================================
+# 1. SECURITY & CREDENTIALS
+# =========================================
+.env
+.env.*
+*.key
+*.pem
+credentials.json
+
+# =========================================
+# 2. MASSIVE BROWSER DATA & PROFILES (CRITICAL)
+# =========================================
+# This prevents pushing gigabytes of Chrome cache, cookies, and history
+chrome_profile/
+*/chrome_profile/
+.playwright/
+
+# =========================================
+# 3. AGENT DATABASES & MEMORY
+# =========================================
+# Prevents pushing local SQLite and Chroma vector databases
+agent_checkpoints.db*
+agent_memory_db/
+*/agent_memory_db/
+state_memory.json
+
+# =========================================
+# 4. ARTIFACTS, LOGS & DEBUGGING
+# =========================================
+# Prevents pushing thousands of screenshots and log files
+debug_screenshots/
+debug_axtree/
+run_archives/
+run_log/
+run_debug/
+reports/
+pom/
+*.log
+*.jsonl
+project_structure.txt
+tree_generator.py
+test_data.json
+
+# =========================================
+# 5. PYTHON & ENVIRONMENTS
+# =========================================
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+env/
+ENV/
+*.egg-info/
+yantraksh_modules.egg-info/
+setup.log
+get-pip.py
+setup.py
+
+# =========================================
+# 6. NODE.JS & NEXT.JS (FRONTEND)
+# =========================================
+node_modules/
+.next/
+out/
+build/
+.npm/
+
+# =========================================
+# 7. OS & IDE HIDDEN FILES
+# =========================================
+.DS_Store
+.vscode/
+.idea/
+latest code/
+
+# =========================================
+# 8. LOCATORS & ACCIDENTAL ARTIFACTS
+# =========================================
+/package.json
+/package-lock.json
+locators/
+*/locators/
+features/

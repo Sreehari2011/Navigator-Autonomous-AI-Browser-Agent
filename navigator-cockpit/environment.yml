@@ -1,0 +1,28 @@
+name: yantraksh
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  # --- Let conda handle the complex AI/Data Science stack ---
+  - spacy=3.7.2
+  - pytorch
+  - transformers
+  - numpy
+  # --- Use pip for the remaining packages ---
+  - pip
+  - pip:
+    - typer==0.12.3
+    - selenium==4.26.0
+    - selenium-wire==5.1.0
+    - blinker==1.7.0
+    - beautifulsoup4==4.12.2
+    - webdriver-manager==4.0.2
+    - fastapi==0.111.1
+    - uvicorn[standard]==0.30.3
+    - websockets==12.0
+    # --- Add any other smaller packages from your requirements.txt if needed ---
+    # Example:
+    - requests==2.31.0
+    - pyyaml==6.0.1
+    - trio==0.23.1
