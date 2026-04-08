@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🌐 Navigator: Autonomous AI Browser Agent
+# Navigator: Autonomous AI Browser Agent
 
 [![Python Version](https://img.shields.io/badge/Python-3.10+-blue.svg)](https://python.org)
 [![Framework](https://img.shields.io/badge/Framework-LangGraph-purple)](https://langchain.com/langgraph)
