@@ -11,7 +11,7 @@
 
 </div>
 
-## 🚀 Architectural Highlights
+## Architectural Highlights
 
 Most LLM browser agents fail because they parse raw HTML (crashing the context window) and operate blindly. Navigator solves this through advanced systems engineering:
 
@@ -25,14 +25,14 @@ The agent hooks directly into the **Chrome DevTools Protocol (CDP)**, capturing 
 - **Episodic Session Memory:** Tracks visual stalls ("I clicked but the screen didn't change") to dynamically break out of infinite hallucination loops.
 - **Semantic Long-Term Memory (ChromaDB):** Stores and retrieves successful UI interaction patterns (e.g., multi-step dropdown logic) across different browsing sessions.
 
-## 🛠️ Tech Stack
+## Tech Stack
 - **AI Orchestration:** LangGraph, LangChain, Ollama/OpenAI API
 - **Browser Automation:** Playwright, Chrome DevTools Protocol (CDP)
 - **Backend:** FastAPI, WebSockets, aiohttp
 - **Frontend:** Next.js, React, Tailwind CSS
 - **Vector Database:** ChromaDB
 
-## 🏁 Quick Start
+## Quick Start
 
 **1. Install Backend Dependencies**
 ```bash
